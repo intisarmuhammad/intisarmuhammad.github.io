@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #a9a9a9;
+  background-color: #4EA0EB;
 }
 
 body {
@@ -57,7 +57,7 @@ header {
 }
 
 body > * {
-  background-color: red;
+  background-color: #49EB27;
   padding: 1%;
 }
 
@@ -73,7 +73,7 @@ h1 {
 
 header img {
   display: block;
-  height: 60px;
+  height: 10px;
   padding-top: 20.15px;
 }
 
