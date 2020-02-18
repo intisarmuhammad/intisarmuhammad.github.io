@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #4EA0EB;
+  background-color: #a9a9a9;
 }
 
 body {
@@ -51,13 +51,14 @@ p, li {
 /* || header layout */
 
 header {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 200px;
   display: flex;
   flex-flow: row wrap;
 }
 
 body > * {
-  background-color: #49EB27;
+  background-color: #4EA0EB;
   padding: 1%;
 }
 
