@@ -1,0 +1,24 @@
+/* General Setup*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 10px;
+    background-color: #4EA0EB;
+  }
+  
+  body {
+    width: 100%;
+    min-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Typography*/
+
+  h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'Bree Serif', serif;
+  }
