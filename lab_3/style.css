@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #a9a9a9;
+  background-color: #4EA0EB;
 }
 
 body {
@@ -18,7 +18,11 @@ body {
 
 /* || typography */
 
-h1, h2, h3 {
+h1 {
+  font-family: 'Arima Madurai';
+}
+
+h2, h3 {
   font-family: 'Cinzel Decorative', cursive;
   color: #2a2a2a;
 }
@@ -48,10 +52,10 @@ p, li {
   line-height: 1.5;
 }
 
+
 /* || header layout */
 
 header {
-  width: 100%;
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
@@ -76,7 +80,7 @@ header img {
   display: block;
   height: 80px;
   padding-right: 30px;
-  padding-top: 20.15px;
+  padding-top: 45px;
 }
 
 nav {
@@ -120,7 +124,7 @@ article, section {
 }
 
 aside {
-  flex: 1;
+  flex: 2;
   margin-left: 10px;
   padding: 1%;
 }
@@ -132,6 +136,8 @@ aside a {
 }
 
 aside img {
+  display: block;
+  float: left;
   max-width: 100%;
 }
 
