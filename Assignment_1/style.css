@@ -22,3 +22,17 @@ html, body {
     font-family: 'Source Serif Pro', serif;
     font-family: 'Bree Serif', serif;
   }
+
+  /* header layout*/
+
+  h1 {
+    flex: 5;
+    text-transform: uppercase;
+  }
+  
+  header img {
+    display: block;
+    height: 20px;
+    padding-right: 30px;
+    padding-top: 45px;
+  }
