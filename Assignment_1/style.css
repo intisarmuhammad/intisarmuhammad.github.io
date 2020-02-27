@@ -18,12 +18,12 @@ html, body {
 
   /* Typography*/
 
-  h1 {
+  .header h1 {
     font-family: 'Source Serif Pro', serif;
     font-family: 'Bree Serif', serif;
   }
 
-  h1 {
+  .header h1 {
     font-size: 4rem;
     text-align: left;
     padding-left: 15px;
@@ -46,19 +46,19 @@ html, body {
 
   /* header layout*/
 
-  header {
+  .header {
     margin-bottom: 0px;
     display: flex;
     flex-flow: row wrap;
     background-color: #8C503A;
   }
 
-  h1 {
+  .header h1 {
     flex: 5;
     text-transform: uppercase;
   }
 
-  header img {
+  .header img {
     display: block;
     height: 110px;
     width: 110px;
@@ -98,18 +98,19 @@ html, body {
   }
 
   .self-img img{
-    border-width: 1 px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8C503A;
     border-radius: 4px;
   }
 
   .self-img p{
     text-align: center;
-    background-color: #CE9459;
+    background-color: #D9D0C7
   }
 
   .work-history{
-    display: inline-block;
-    flex: 0 0 10%;
     align-content: space-around;
     width: 600px;
+    background-color: #D9D0C7;
   }
