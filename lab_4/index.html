@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Prof A's Demo Page</title>
+    <title>Intisar Muhammad's Lab 4</title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
 
@@ -25,10 +25,22 @@
       </div>
     </div>
     <script>
+      const myHeading = document.querySelector('.header');
+      myHeading.textContent = "Intisar Muhammad's Lab 4";
       function clickMe() {
         const content = document.querySelector(".content");
         content.innerHTML = "Hello world";
+        var p1 = document.createElement("P");
+        var txt1 = document.createTextNode("My name has 15 characters");
+        p1.appendChild(txt1);
+        document.querySelector('.content').appendChild(p1);
+        var p2 = document.createElement("P");
+        var txt2 = document.createTextNode("The third character in my name is T");
+        p2.appendChild(txt2);
+        document.querySelector('.content').appendChild(p2);
+        var count = myHeading.substring(0,6);
       }
+      
     </script>
   </body>
 </html>
