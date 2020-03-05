@@ -25,20 +25,20 @@
       </div>
     </div>
     <script>
-      const myHeading = document.querySelector('.header');
-      myHeading.textContent = "Intisar Muhammad's Lab 4";
+      
       function clickMe() {
         const content = document.querySelector(".content");
         content.innerHTML = "Hello world";
-        var p1 = document.createElement("P");
-        var txt1 = document.createTextNode("My name has 15 characters");
-        p1.appendChild(txt1);
-        document.querySelector('.content').appendChild(p1);
-        var p2 = document.createElement("P");
-        var txt2 = document.createTextNode("The third character in my name is T");
-        p2.appendChild(txt2);
-        document.querySelector('.content').appendChild(p2);
-        var count = myHeading.substring(0,6);
+        let firstname = "Intisar"
+        let lastname = "Muhammad"
+        let name_length = firstname.length + lastname.length
+        let third = firstname.charAt(2)
+        let third_upper = third.toUpperCase()
+        let paragraph = document.querySelector(".content")
+        paragraph.innerHTML = "<p> My name has " + name_length + " characters </p> <p> The third character in my name is " + third_upper +"<br> The last three characters of my last name are " + lastname.slice(-3)
+        
+        const myHeading = document.querySelector('.header');
+        myHeading.textContent = firstname +" " + lastname + "'s Lab 4 " +name_length;
       }
       
     </script>
