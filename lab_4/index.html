@@ -25,7 +25,6 @@
       </div>
     </div>
     <script>
-      
       function clickMe() {
         const content = document.querySelector(".content");
         content.innerHTML = "Hello world";
@@ -35,7 +34,7 @@
         let third = firstname.charAt(2)
         let third_upper = third.toUpperCase()
         let paragraph = document.querySelector(".content")
-        paragraph.innerHTML = "<p> My name has " + name_length + " characters </p> <p> The third character in my name is " + third_upper +"<br> The last three characters of my last name are " + lastname.slice(-3)
+        paragraph.innerHTML = "<p>Hello World!</p> <p> My name has " + name_length + " characters </p> <p> The third character in my name is " + third_upper +"<br> The last three characters of my last name are " + lastname.slice(-3)
         
         const myHeading = document.querySelector('.header');
         myHeading.textContent = firstname +" " + lastname + "'s Lab 4 " +name_length;
