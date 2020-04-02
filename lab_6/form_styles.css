@@ -1,8 +1,13 @@
-body {
+.wrapper {
   /* Center the form on the page */
   margin: 0 auto;
   width: 400px;
   /* Form outline */
+}
+form{
+    display: flex;
+    justify-content: center;
+     
 }
 
 label {
@@ -16,7 +21,7 @@ label {
 input, textarea {
   /* To make sure that all text fields have the same font settings
     By default, textareas have a monospace font */
-  font: 1em sans-serif;
+  font-family: "Courier New", Courier, monospace;
 
   /* Uniform text field size */
   width: 300px;
