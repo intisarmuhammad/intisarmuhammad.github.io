@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Test JSON page</title>
+  <title>Intisar Muhammad Lab 5</title>
   <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
@@ -19,6 +19,16 @@
   </div>
   <script>
     /* N.B. - For your lab, use the variable "countries" now available on the window space */
+    const myHeading = document.querySelector('.header');
+    myHeading.textContent = "Intisar Muhammad's List of Countries"
+    let countries = document.querySelector(".content")
+    countries.innerHTML = "<ol> </ol>"
+    const btn = document.querySelector('.activate');
+    btn.onclick = function(){
+      function getRandom(){
+        return Math.random(countries)
+      }
+    }
     const countries = [
       { "name": "Afghanistan", "code": "AF" },
       { "name": "Åland Islands", "code": "AX" },
