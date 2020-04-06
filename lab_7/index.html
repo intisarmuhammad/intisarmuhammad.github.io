@@ -38,7 +38,9 @@
         accessToken: 'pk.eyJ1IjoiaW50aXNhcjUwNSIsImEiOiJjazhucXludXowd25oM21rejI5cGp2d2hvIn0.kir13BCPPXMvDXu1_p6G7Q'
       }).addTo(mymap);
 
-      var marker = L.marker([38.9860, -76.9451]).addTo(mymap);
+      var librarymarker = L.marker([38.9860, -76.9451]).addTo(mymap);
+      librarymarker.bindPopup("<b>Mckeldin Library</b>").openPopup();
+
         /* Your lab code can go here, or in an external file you include */
     </script>
   </body>

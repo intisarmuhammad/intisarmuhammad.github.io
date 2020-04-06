@@ -67,6 +67,10 @@ h3 {
   width: 960px;
 }
 
+.leaflet-container {
+  border-radius: 25 px;
+}
+
 .instructions {
   padding: 0 25px;
 }
@@ -105,4 +109,8 @@ h3 {
 .activate:active {
   position: relative;
   top: 1px;
+}
+
+.librarymarker {
+  color: purple;
 }
