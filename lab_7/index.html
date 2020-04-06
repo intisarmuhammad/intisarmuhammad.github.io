@@ -20,10 +20,10 @@
     <div class="container">
       <div class="wrapper">
         <div class="header">Frontend Libraries: Maps Lab</div>
-        <div class="content"></div>
-        <div id="mapid"></div>
+        <div class="content">
+          <div id="mapid"></div>
+        </div>
           When your lab is done, this should be replaced with a stylish map.
-        <div id="mapid"></div>
         <div class="footer">Make some markers work!</div>
       </div>
     </div>
@@ -37,6 +37,8 @@
         zoomOffset: -1,
         accessToken: 'pk.eyJ1IjoiaW50aXNhcjUwNSIsImEiOiJjazhucXludXowd25oM21rejI5cGp2d2hvIn0.kir13BCPPXMvDXu1_p6G7Q'
       }).addTo(mymap);
+
+      var marker = L.marker([51.5, -0.09]).addTo(mymap);
         /* Your lab code can go here, or in an external file you include */
     </script>
   </body>
