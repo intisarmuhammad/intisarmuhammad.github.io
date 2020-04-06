@@ -40,7 +40,14 @@
       var librarymarker = L.marker([38.9860, -76.9451]).addTo(mymap);
       librarymarker.bindPopup("<b>McKeldin Library</b>").openPopup();
 
-        /* Your lab code can go here, or in an external file you include */
+      const food = [
+        {
+          "long":"38.759579", 
+          "lat": "-76.996114"
+        }
+        ]
+      var martinismarker = L.marker([38.759579,-76.996114 ]).addTo(mymap);
+      /*let mcdonaldsmarker = L.marker(food[1]).addTo(mymap);*/
     </script>
   </body>
 </html>
