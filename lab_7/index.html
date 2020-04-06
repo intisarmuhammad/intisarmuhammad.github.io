@@ -40,13 +40,21 @@
       var librarymarker = L.marker([38.9860, -76.9451]).addTo(mymap);
       librarymarker.bindPopup("<b>McKeldin Library</b>").openPopup();
 
-      const food = [
-        {
-          "long":"38.759579", 
-          "lat": "-76.996114"
+      var food = [
+        [38.759579, -76.996114, 'Martinis'],
+        [38.901794, -76.90064, 'Mcdonalds'],
+        [38.908236, -76.71815, 'Subway']
+        ];
+        for (var i=0; i<food.length; i++) {
+          var lat = food[i][0];
+          var long = food[i][1];
+          var name = food[i][2];
+            var newlocation = new L.LatLng(lat, long);
+            var marker = L.marker(newlocation).addTo(mymap);
+            marker.bindPopup(name).openPopup();
         }
-        ]
-      var martinismarker = L.marker([38.759579,-76.996114 ]).addTo(mymap);
+      /*var martinismarker = L.marker([food["long", "lat"]]).addTo(mymap);*/
+      
       /*let mcdonaldsmarker = L.marker(food[1]).addTo(mymap);*/
     </script>
   </body>
