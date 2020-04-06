@@ -65,6 +65,9 @@ h3 {
 #mapid { 
   height: 600px; 
   width: 960px;
+  -webkit-border-radius:20px;
+  z-index:0;
+  border-radius: 20px;
 }
 
 .leaflet-container {
@@ -111,6 +114,6 @@ h3 {
   top: 1px;
 }
 
-.librarymarker {
-  color: purple;
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: purple;
 }
