@@ -114,6 +114,11 @@ h3 {
   top: 1px;
 }
 
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+.leaflet-popup-wrapper-content, .leaflet-popup-tip {
+  background: purple;
+}
+
+.leaflet-popup-tip,
+.leaflet-popup-content-wrapper {
   background: purple;
 }
