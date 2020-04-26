@@ -19,6 +19,40 @@
       .then(res => res.json())
       .then(res => {
         // Here's where your chart code should go.
+        const chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title: {
+              text: "Places to Eat",
+            axisX: {
+              labelFontSize: 8,
+              margin: 10,
+              interval: 1,
+            },
+            axisY: {
+              scaleBreaks: {
+                customBreaks: [
+                  {
+                    startValue: 20,
+                    endValue: 35,
+                  },
+                  {
+                    startValue: 60,
+                    endValue: 120,
+                  },
+                  {
+                    startValue: 160,
+                    endValue: 220,
+                  },
+                ],
+              },
+            },
+            data: [
+              {
+                type: "bar",
+                dataPoints: results
+              },
+            ],
+          } 
       })
   </script>
 </body>
