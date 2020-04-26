@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Replace Me With Your Lab Page</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
 
-<head>
-  <title>Replace Me With Your Lab Page</title>
-  <link rel="stylesheet" type="text/css" href="./styles.css">
-</head>
-
-<body>
-  <div class="container">
-    <div class="wrapper">
-      <div class="header">Replace Me With Your Lab Page</div>
-      <div class="content"></div>
-      <div class="footer"></div>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="header">Replace Me With Your Lab Page</div>
+        <div class="content"></div>
+        <div class="footer"></div>
+      </div>
     </div>
-  </div>
-  <script>
-    fetch('/api') // Rather than fetching from PG County, we're going to fetch from our own server.
-      .then(res => res.json())
-      .then(res => {
-        // Here's where your chart code should go.
-        const chart = new CanvasJS.Chart("chartContainer", {
-            animationEnabled: true,
-            title: {
-              text: "Places to Eat",
-            axisX: {
-              labelFontSize: 8,
-              margin: 10,
-              interval: 1,
-            },
-            axisY: {
-              scaleBreaks: {
-                customBreaks: [
-                  {
-                    startValue: 20,
-                    endValue: 35,
-                  },
-                  {
-                    startValue: 60,
-                    endValue: 120,
-                  },
-                  {
-                    startValue: 160,
-                    endValue: 220,
-                  },
-                ],
-              },
-            },
-            data: [
-              {
-                type: "bar",
-                dataPoints: results
-              },
-            ],
-          } 
-      })
-  </script>
-</body>
+    <script>
+          fetch('/api') // Rather than fetching from PG County, we're going to fetch from our own server.
+            .then(res => res.json())
+            .then(res => {
+              // Here's where your chart code should go.
+              const dataPoints = [];
+              const chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+      	            theme: "light2",
+      	            title: {
+      		            text: "Daily Sales Data"
+      	            },
+      	            axisY: {
+      		            title: "Units",
+      		            titleFontSize: 24
+      	            },
+      	            data: [{
+      		            type: "column",
+      		            yValueFormatString: "#,### Units",
+      		            dataPoints: dataPoints
+      	            }]
+              });
 
+                function addData(data) {
+      	          for (var i = 0; i < data.length; i++) {
+      		          dataPoints.push({
+      			          x: new Date(data[i].date),
+      			          y: data[i].units
+      		          });
+      	          }
+                  chart.render();
+                }
+              })
+    </script>
+  </body>
 </html>
